@@ -1,0 +1,74 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\usepackage[
+backend=biber,
+style=alphabetic,
+sorting=ynt
+]{biblatex}
+\addbibresource{bibliographie.bib}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue
+}
+
+\title{Interesting Quantum Information Science articles}
+\author{Sahar Saoudi}
+\date{November 2, 2023}
+
+
+\begin{document}
+
+\maketitle
+
+
+\section{Subject}
+All of these articles mentioned below are articles I found in the university of Sherbrooke's Inspec. The latter is a database of articles from periodicals, conference proceedings, and technical reports primarily in the fields of computer science, electrical engineering, computer engineering, electronics, and physics.
+I was doing research on the algorithm of Shor and I came across these articles. Each one of them talks in some way about the algorithm of Shor and all of them are super interesting !
+For context, Shor's algorithm, devised by Peter Shor, is a quantum algorithm that efficiently factors large integers into their prime components, posing a threat to classical cryptographic systems relying on the difficulty of factoring for security. By leveraging quantum parallelism, Shor's algorithm achieves exponential speedup over classical factoring algorithms, potentially compromising widely-used cryptographic protocols. 
+
+\section{Article 1}\label{sec:section1}
+\begin{itemize}
+    \item Quantum Binary Field Multiplication with Optimized Toffoli Depth and Extension to Quantum Inversion †
+    \item Jang, K., Kim, W., Lim, S., Kang, Y., Yang, Y., Seo, H.
+    \item 2023
+    \item Sensors, Page 3156 (14 pp.)
+\end{itemize}
+reference: \cite{23442639}
+
+\subsection{Description}\label{subsec:subsec1}
+Shor's algorithm addresses the discrete logarithm problem on binary elliptic curves, but its quantum implementation faces challenges, notably the overhead of binary field arithmetic. This study focuses on optimizing quantum multiplication, adopting the Karatsuba method to reduce both Toffoli depth and full depth. The proposed approach achieves a Toffoli depth of one, lowers the overall circuit depth, and demonstrates superior trade-off performance in resource requirements. This optimized quantum multiplication is particularly effective when integrated into algorithms like the Itoh-Tsujii inversion. 
+
+\section{Article 2}
+\begin{itemize}
+    \item Quantum Optimization for Linear Algebra Problems
+    \item Borle, Ajinkya
+    \item 2022
+    \item ProQuest Dissertations and Theses Global
+\end{itemize}
+reference: \cite{20230513513456}
+
+\subsection{Description}
+This dissertation delves into the era of noisy intermediate-scale quantum (NISQ) computers, acknowledging their limitations for traditional algorithms like Shor's or Grover's. It explores the potential of NISQ-era quantum optimization, focusing on quantum annealing for solving linear least squares problems and gate-model quantum approximate optimization algorithms (QAOA) for linear algebra. The study reveals that quantum annealing can outperform classical methods for certain conditions, particularly in densely connected linear algebra problem graphs. Post-processing techniques, such as single-qubit correction (SQC), prove effective in improving solution quality, especially in densely connected domains. The dissertation also investigates the application of QAOA for binary linear least squares (BLLS), showcasing its scalability for good approximate solutions, although optimal solutions remain challenging. Simulated Annealing is found to outperform QAOA for BLLS under specific conditions. The work underscores the possibilities and challenges of applying quantum optimization in the NISQ era, emphasizing the practical aspects of quantum-classical hybrid solvers and pointing out current challenges in experimental implementations.
+
+\section{Article 3}
+\begin{itemize}
+    \item Quantum technology's role in cybersecurity
+    \item Teodoras, D.-A., Popovici, E.-C., Suciu, G., Sachian, M.-A.
+    \item 2023
+    \item Proceedings of SPIE, Page 124930G (8 pp.)
+\end{itemize}
+reference: \cite{23251628}
+
+\subsection{Description}
+In the realm of quantum technology development, Shor's algorithm has compromised most asymmetric encryption, while symmetric algorithms like AES-256 remain resilient against quantum attacks, with Grover's algorithm merely halving brute force attack time. This paper suggests exploring the impact of quantum technology on existing security algorithms and proposes the development of new encryption methods to enhance data protection. Quantum cryptography, particularly through Quantum Key Distribution, introduces the potential for revolutionary advancements, offering solutions to cryptographic challenges currently deemed insurmountable by classical computers. Lastly, the paper explores how the concept of quantum teleportation could usher in faster and more secure telecommunication solutions compared to those relying on traditional radio technologies.
+
+
+
+\nocite{*} 
+
+\printbibliography
+
+\end{document}
